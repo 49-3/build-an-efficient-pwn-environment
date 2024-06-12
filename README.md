@@ -40,6 +40,7 @@ You can install it by ways listed [here](https://github.com/Jguer/yay#installati
 yay -G glibc
 cd glibc
 sed -i 's/options=(!strip staticlibs)/options=(!strip debug staticlibs)/' PKGBUILD
+makepkg -si -g >> PKGBUILD
 makepkg -si
 ```
 
