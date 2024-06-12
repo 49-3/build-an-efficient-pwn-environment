@@ -72,6 +72,7 @@ yay -S gef-git
 ```
 or
 ```
+pip install build poetry
 yay -S pwndbg-git
 ```
 and add `source /usr/share/gef/gef.py` or `source /usr/share/pwndbg/gdbinit.py` in `~/.gdbinit` to use them.
