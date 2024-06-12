@@ -38,10 +38,10 @@ You can install it by ways listed [here](https://github.com/Jguer/yay#installati
 
 ```sh
 yay -G glibc
-cd glibc
-sed -i 's/options=(!strip staticlibs)/options=(!strip debug staticlibs)/' PKGBUILD
+cd glibc 
+sed -i 's/options=(staticlibs !lto)/options=(staticlibs debug !lto)/' PKGBUILD
 makepkg -si -g >> PKGBUILD
-makepkg -si
+makepkg -si --nocheck
 ```
 
 Notice: this step could not be necessary if you want to use the `glibc` same as which used on the server.
